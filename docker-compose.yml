@@ -2,7 +2,9 @@ version: '3.1'
 
 services:
   ruby:
-    image: ruby:2.4
+    build: .
     working_dir: /root/src
     volumes:
       - ./:/root/src
+    environment:
+      LANG: ja_JP.UTF-8

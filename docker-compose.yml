@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+  ruby:
+    image: ruby:2.4
+    working_dir: /root/src
+    volumes:
+      - ./:/root/src
